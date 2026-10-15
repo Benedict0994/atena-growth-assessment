@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Atena conversion-focused homepage mock created for a digital growth assessment." />
+  <title>Atena | Conversion-Focused Homepage Mock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Atena home">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">ATENA</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#how">How to Play</a>
+        <a href="#why">Why Atena</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <a class="btn btn-small btn-primary js-track"
+         data-event="header_play_click"
+         href="#play">
+        Play Now
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Simple. Mobile-first. Easy to understand.</span>
+          <h1>Play Atena from your phone in just a few simple steps.</h1>
+          <p class="hero-lead">
+            A clearer, faster journey designed to help eligible adult users
+            understand the product and move confidently from interest to play.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large js-track"
+               data-event="hero_play_click"
+               href="#play">
+              Play Now
+            </a>
+
+            <a class="btn btn-secondary btn-large js-track"
+               data-event="hero_how_to_play_click"
+               href="#how">
+              How to Play
+            </a>
+          </div>
+
+          <div class="trust-row" aria-label="Trust and responsible play">
+            <span>18+ only</span>
+            <span>Responsible Play</span>
+            <span>Secure Mobile Journey</span>
+          </div>
+
+          <p class="prototype-note">
+            Assessment prototype only — no live play, payments or customer data.
+          </p>
+        </div>
+
+        <div class="phone-card" aria-label="Mock mobile play journey">
+          <div class="phone-top">
+            <span class="phone-dot"></span>
+            <span>ATENA</span>
+            <span class="secure-pill">Secure</span>
+          </div>
+
+          <div class="phone-content">
+            <p class="mini-label">START HERE</p>
+            <h2>Ready to play?</h2>
+            <p>Follow three simple steps to get started.</p>
+
+            <div class="mini-step">
+              <span>1</span>
+              <div>
+                <strong>Choose a game</strong>
+                <small>Select the option you want to play.</small>
+              </div>
+            </div>
+
+            <div class="mini-step">
+              <span>2</span>
+              <div>
+                <strong>Select your numbers</strong>
+                <small>Make your selections clearly.</small>
+              </div>
+            </div>
+
+            <div class="mini-step">
+              <span>3</span>
+              <div>
+                <strong>Confirm your play</strong>
+                <small>Review and continue when ready.</small>
+              </div>
+            </div>
+
+            <a class="phone-cta js-track"
+               data-event="mock_phone_play_click"
+               href="#play">
+              Continue
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="value-strip" id="why">
+      <div class="container value-grid">
+        <article>
+          <span class="value-icon">01</span>
+          <h3>Clearer Journey</h3>
+          <p>Prominent calls to action reduce uncertainty about what to do next.</p>
+        </article>
+        <article>
+          <span class="value-icon">02</span>
+          <h3>Mobile First</h3>
+          <p>Large buttons, readable text and short sections support mobile users.</p>
+        </article>
+        <article>
+          <span class="value-icon">03</span>
+          <h3>Built to Measure</h3>
+          <p>CTA interactions are tracked in this mock for conversion analysis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Reduce friction</span>
+          <h2>How to play — explained in three steps</h2>
+          <p>
+            The goal is to answer the user’s most important question quickly:
+            “What do I need to do next?”
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose your game</h3>
+            <p>Present the available options in a clear, scannable format.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3>Select your numbers</h3>
+            <p>Keep the selection experience simple, readable and mobile-friendly.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3>Review and continue</h3>
+            <p>Make the next action obvious before the user leaves the page.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="conversion-section" id="play">
+      <div class="container conversion-grid">
+        <div>
+          <span class="eyebrow light">Conversion-focused design</span>
+          <h2>A strong CTA should be visible, specific and measurable.</h2>
+          <p>
+            In the real implementation, this button would lead to Atena’s approved
+            play journey. In this assessment mock, it records a test conversion event only.
+          </p>
+        </div>
+
+        <div class="conversion-card">
+          <p class="mini-label">MOCK CTA EVENT</p>
+          <h3>Test the conversion interaction</h3>
+          <p>Click below to simulate the tracked “Play Now” action.</p>
+
+          <button class="btn btn-gold btn-large js-track"
+                  data-event="conversion_play_click"
+                  id="mock-play-button">
+            Play Now
+          </button>
+
+          <div class="event-box" aria-live="polite">
+            <span>Last tracked event</span>
+            <strong id="event-output">No event yet</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Technical improvement</span>
+          <h2>Designed for discoverability and measurement</h2>
+        </div>
+
+        <div class="technical-grid">
+          <div class="technical-item">
+            <strong>SEO-ready structure</strong>
+            <p>Semantic headings, page title, meta description and readable content hierarchy.</p>
+          </div>
+          <div class="technical-item">
+            <strong>Responsive layout</strong>
+            <p>CSS adapts the experience for mobile, tablet and desktop screens.</p>
+          </div>
+          <div class="technical-item">
+            <strong>Event tracking</strong>
+            <p>CTA clicks are logged so conversion behaviour can be demonstrated.</p>
+          </div>
+          <div class="technical-item">
+            <strong>Accessible interactions</strong>
+            <p>Clear contrast, large buttons, meaningful labels and structured navigation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Remove uncertainty</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <details>
+          <summary>What is this page?</summary>
+          <p>
+            This is a local assessment prototype showing a conversion-focused
+            homepage concept. It is not Atena’s live website.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does the Play Now button process a real play?</summary>
+          <p>
+            No. It only triggers a mock analytics event for demonstration purposes.
+          </p>
+        </details>
+
+        <details>
+          <summary>What would be measured in a real implementation?</summary>
+          <p>
+            CTA clicks, registration starts, registration completions, game selection,
+            payment initiation, first play and repeat activity.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div>
+        <strong>ATENA — Assessment Prototype</strong>
+        <p>Digital Growth & Engagement Lead practical assessment.</p>
+      </div>
+      <p>18+ | Responsible participation | No live transactions</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
